@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server    #为你的应用起个名字，该名字将注册到eureka注册中心
+  cloud:
+    config:
+      server: 
+        git:
+          uri: https://github.com/jackchow621/ConfigRepository/
+          searchPaths: jack
+          username: 
+          password: 
+    label: master
